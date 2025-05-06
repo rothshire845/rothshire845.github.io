@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Facade Engineering Rothshire</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="../assets/img/R.svg" rel="icon">
+    <link href="../assets/img/R.svg" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid d-flex align-items-center">
+
+            <a href="../index.html" class="logo d-flex align-items-center me-auto">
+                <!-- logo goes here -->
+                <img src="../assets/img/roth_logo.png" alt="Rothshire">
+            </a>
+
+      <!--Navbar section-->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+            <li><a href="../index.html" class="active">
+              <p>Home</p></a>
+            </li>
+            <li><a href="../index.html#about">
+              <p>The Rothshire Difference</p></a>
+            </li>
+          <!-- Dropdown Section for Expertise-->
+          <li class="dropdown"><a href="#"><span>
+                <p>Expertise</p>
+              </span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                    <li class="dropdown"><a href="#"><span>Buildings</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                        <li><a href="../services/civil&stormwater.html">Civil Engineering</a></li>
+                        <li><a href="../services/facade.html">Facade Engineering</a></li>
+                        <li><a href="../services/structural_engineering.html">Structural Engineering</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#"><span>Transportation</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                        <li><a href="../services/civil&stormwater.html">Civil & Stormwater</a></li>
+                        <li><a href="../services/structural_engineering.html">Structural Engineering</a></li>
+                        <li><a href="../services/infrastructure.html">Infrastructual Engineering</a></li>
+                        <li><a href="../services/engineering.html">Engineering & Investigation</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#"><span>Water & Soil</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                        <li><a href="../services/flood.html">Flood Engineering</a></li>
+                        <li><a href="../services/civil&stormwater.html">Civil & Stormwater</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#"><span>Mining & Minerals</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                        <li><a href="../services/civil&stormwater.html">Civil & Stormwater</a></li>
+                        <li><a href="../services/project.html">Project Management</a></li>
+                        <li><a href="../services/infrastructure.html">Infrastructual Engineering</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#"><span>Oils & Gas</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                        <li><a href="../services/civil&stormwater.html">Civil Engineering</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#"><span>Government & Defence</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                        <li><a href="../services/civil&stormwater.html">Civil & Stormwater</a></li>
+                        <li><a href="../services/facade.html">Facade Engineering</a></li>
+                        <li><a href="../services/project.html">Project Management</a></li>
+                        <li><a href="../services/structural_engineering.html">Structural Engineering</a></li>
+                        <li><a href="../services/planning.html">Planning & Development</a></li>
+                        <li><a href="../services/infrastructure.html">Infrastructual Engineering</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#"><span>Heritage</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                        <li><a href="../services/expert.html">Expert Witness</a></li>
+                        <li><a href="../services/planning.html">Planning & Development</a></li>
+                        <li><a href="../services/engineering.html">Engineering Investigation</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#"><span>Marine & Coastal</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                        <li><a href="../services/flood.html">Flood Engineering</a></li>
+                        <li><a href="../services/civil&stormwater.html">Civil & Stormwater</a></li>
+                        <li><a href="../services/facade.html">Facade Engineering</a></li>
+                        </ul>
+                    </li>
+                </ul>
+          </li>
+           <!-- End Dropdown Section for Expertise-->
+            <li><a href="../#portfolio">
+              <p>Projects</p>
+            </a>
+            </li>
+            <li><a href="../contactus.html">
+              <p>Contact us</p>
+            </a>
+            </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <!--End of Navbar section-->
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Page Title -->
+        <div class="page-title dark-background">
+            <div class="container position-relative">
+                <h1>Facade</h1>
+                <!-- <p>You think we create you plan we execture.</p> -->
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="current">Facade Projects</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- End Page Title -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                    <!-- Blog Details Section -->
+                    <section id="blog-details" class="blog-details section">
+                        <div class="container">
+
+                            <article class="article">
+                                <img src="../assets/img/services/facade/deewhy.jpg" alt="" class="img-fluid">
+                                <h2 class="title">DEE WHY, NSW </h2>
+                                <!-- <div class="meta-top">
+                                    <ul>
+                                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a
+                                                href="#">Abash shah</a></li>
+                                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a
+                                                href="#"><time datetime="2020-01-01">Jan 1,
+                                                    2022</time></a></li>
+                                        <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a
+                                                href="#">12 Comments</a></li>
+                                    </ul>
+                                </div>End meta top -->
+                                    <p style="text-align: justify; display: block;">
+                                        The Delmar residential and commercial building is located in Dee Why area in Sydney and consists of seven 
+                                        ﬂoors. The exterior façade of the ground ﬂoor is framed by large vertical windows along the façade and the 
+                                        southern area of the ground ﬂoor has a Simmental Territory panel wall. The middle and upper ﬂoors of the 
+                                        building are covered by a combination of brick wall cladding and precast concrete along the outer boundaries. 
+                                        The Delmar Dee Why building contains 71 residential units and 3 commercial units. The Dee Why area is the 
+                                        inspiration for the Delmar project and is a place where the best of the city and the coast meet. At the entrance 
+                                        to the vibrant Dee Why district and a short stroll from the beach, Delmar’s contemporary design approach 
+                                        “from the inside out” oƯers a new kind of living with an eclectic mix of apartments designed for ultimate luxury 
+                                        and comfort, equipped with the latest modern technology. The apartments are spacious and consist of one, 
+                                        two and three bedrooms, some with oƯices, and all rooms open onto the outdoor spaces with modern and 
+                                        vibrant views. The outer courtyard lobby is centred around a seven-storey security building with access to 
+                                        elevators in that area. The building is also just a few steps away from the large Dee Why shopping mall, an icon 
+                                        and landmark of the Dee Why area, in addition to easy access to the express bus service stations and 
+                                        surrounding facilities such as shops and restaurants.
+                                    </p>
+
+                                    <img src="../assets/img/services/facade/auburn.png" class="img-fluid" alt="">
+                                    <h2 class="title">AUBURN, NSW</h2>
+                                    <p style="text-align: justify; display: block;">
+                                        The Grand Auburn is a multi-residential development where Rothshire was advisory on the architectural review, including weatherproofing of critical junctions between different claddings.
+                                        Rothshire’s expertise allowed us to provide guidance for complicated issues surrounding thermal compliance, fire, and conformance to the BCA.
+                                    </p>
+                            </article><!-- End post content -->
+
+                        </div>
+                    </section><!-- /Blog Details Section -->
+
+
+                </div>
+
+                <div class="col-lg-4 sidebar">
+
+                    <div class="widgets-container">
+
+                        <!-- Recent Posts Widget -->
+                        <div class="recent-posts-widget widget-item">
+
+                            <h3 class="widget-title">Recent Projects</h3>
+
+                            <div class="post-item">
+                                <img src="../assets/img/services/structural/victoria.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="project_structural.html">Structural Engineering at Kogarah and Wollongong</a></h4>
+                                    <time datetime="2025-03-01">March 1st, 2025</time>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="../assets/img/services/facade/deewhy.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="project_facade.html">Facade Engineering at Deewhy and Auburn</a></h4>
+                                    <time datetime="2020-01-01">June 21, 2023</time>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="../assets/img/services/Infrastructure/city_link.png" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="project_infrastructure.html">Infrastructure at Citylink and M2 Bridge</a>
+                                    </h4>
+                                    <time datetime="2020-01-01">Oct 17, 2024</time>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                            <div class="post-item">
+                                <img src="../assets/img/services/architecture/Sylvania.jpg" alt="" class="flex-shrink-0">
+                                <div>
+                                    <h4><a href="project_architecture.html">Building Design at Sylvania and Forestville Bridge</a></h4>
+                                    <time datetime="2020-01-01">Feb 7, 2024</time>
+                                </div>
+                            </div><!-- End recent post item-->
+
+                        </div><!--/Recent Posts Widget -->
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <!--Footer section-->
+    <footer id="footer" class="footer dark-background">
+
+        <!-- Newsletter section -->
+
+        <!-- <div class="footer-newsletter">
+            <div class="container">
+              <div class="row justify-content-center text-center">
+                <div class="col-lg-6">
+                  <h4 style="text-align: center;">Join Our Newsletter</h4>
+                  <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+                  <form action="forms/newsletter.php" method="post" class="php-email-form">
+                    <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        <!-- /Newsletter section -->
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+
+                <div class="col-lg-3 col-md-3 footer-about">
+                    <a href="index.html" class="d-flex align-items-center">
+                        <span class="sitename">Rothshire</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>845 Pacific Highway <br> Chatswood NSW 2067, Australia</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>+61 1300 076 847</span></p>
+                        <p><strong>Email:</strong> <span>admin@rothshire.com.au</span></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 footer-links">
+                    <h4>Departments</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="../services/civil&stormwater.html">Civil &
+                                Stormwater</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a
+                                href="../services/structural_engineering.html">Structural
+                                Engineering</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="../services/infrastructure.html">Infrastructual
+                                Engineering</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="../services/project.html">Project
+                                Management</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-3 footer-links">
+                    <h4>Careers</h4>
+                    <ul>
+                      <li><i class="bi bi-chevron-right"></i> <a href="../teams/experts.html">Meet the team</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="../blog/blog_home.html">Blog Post</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="../carrers/whyus.html">Why choose us</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="../projects/project_home.html">Recent
+                                Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <h4>Social Medias</h4>
+                    <p>Follow us to get daily updates on Social Platforms</p>
+                    <div class="social-links d-flex">
+                        <a href="https://x.com/rothshire845" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.facebook.com/rothshire845" target="_blank"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/rothshire845" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/rothshire-pty-ltd/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Rothshire</strong> <span>All Rights
+                    Reserved</span></p>
+        </div>
+
+    </footer>
+    <!--/Footer section-->
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+
+    <!-- Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
