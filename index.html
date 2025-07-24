@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rothshire - Coming Soon</title>
+  <title>Rothshire - Website Under Development</title>
   <style>
     * {
       margin: 0;
@@ -13,72 +13,132 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      height: 100vh;
-      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-      color: #ffffff;
+      background: #ffffff;
+      color: #1a1a1a;
+      min-height: 100vh;
       display: flex;
+      flex-direction: column;
+    }
+
+    /* NAVBAR */
+    nav {
+      width: 100%;
+      background: #f4f4f4;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-logo img {
+      height: 110px;
+      width: auto;
+      max-width: 100%;
+    }
+
+    .nav-logo span {
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin-left: 15px;
+      color: #1a1a1a;
+    }
+
+    .nav-links a {
+      color: #333;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s;
+      font-size: x-large;
+    }
+
+    .nav-links a:hover {
+      color: #000;
+      cursor: not-allowed;
+    }
+
+    /* MAIN BODY */
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
       text-align: center;
-      animation: fadeIn 1s ease-in-out;
+      padding: 60px 20px;
     }
 
     h1 {
-      font-size: 4rem;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-      animation: slideDown 1s ease-out;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #1a1a1a;
     }
 
-    p {
-      font-size: 1.5rem;
-      color: #ccc;
-      animation: blink 2s infinite;
+    .contact-info {
+      font-size: 1.2rem;
+      color: #444;
+      line-height: 2;
     }
 
-    @keyframes slideDown {
-      from {
-        opacity: 0;
-        transform: translateY(-40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .contact-info span {
+      display: block;
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
+    a {
+      color: #444;
+      text-decoration: none;
     }
 
-    @keyframes blink {
-      0%, 100% {
-        opacity: 1;
+    @media (max-width: 768px) {
+      .nav-logo img {
+        height: 90px;
       }
-      50% {
-        opacity: 0.6;
-      }
-    }
 
-    @media (max-width: 600px) {
+      .nav-logo span {
+        font-size: 1.3rem;
+      }
+
       h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
 
-      p {
-        font-size: 1.2rem;
+      .nav-links a {
+        margin-left: 10px;
+        font-size: 0.9rem;
       }
     }
   </style>
 </head>
 <body>
-  <h1>Rothshire</h1>
-  <p>Website Under Development</p>
+
+  <nav>
+    <div class="nav-logo">
+      <img src="assets/img/logo/Rothshire - LOGO-1-01-01.png.png" alt="Rothshire Logo">
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Website Under Development</h1>
+    <div class="contact-info">
+      <span>📍 845 Pacific Highway, Chatswood NSW 2067, Australia</span>
+      <span>📞 +61 1300 076 847</span>
+      <span>✉️ <a href="mailto:admin@rothshire.com.au">admin@rothshire.com.au</a></span>
+    </div>
+  </main>
+
 </body>
 </html>
