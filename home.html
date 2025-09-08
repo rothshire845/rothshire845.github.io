@@ -1,144 +1,678 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rothshire - Website Under Development</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Home - Rothshire</title>
+  <meta name="description" content="Rothshire an engineering consultant in Chatswood,">
+  <meta name="keywords" content="Rothshire, rothshire, roth shire,roth-shire,ROTHSHIRE">
+  <meta name="author" content="Rothshire">
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #ffffff;
-      color: #1a1a1a;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+  <!-- Favicons -->
+  <link href="assets/img/R.svg" rel="icon">
+  <link href="assets/img/R.svg" rel="apple-touch-icon">
 
-    /* NAVBAR */
-    nav {
-      width: 100%;
-      background: #8e8d8dce;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    .nav-logo {
-      display: flex;
-      align-items: center;
-    }
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    .nav-logo img {
-      height: 110px;
-      width: auto;
-      max-width: 100%;
-    }
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-    .nav-logo span {
-      font-size: 1.7rem;
-      font-weight: bold;
-      margin-left: 15px;
-      color: #1a1a1a;
-    }
-
-    .nav-links a {
-      color: #333;
-      margin-left: 20px;
-      text-decoration: none;
-      transition: color 0.3s;
-      font-size: x-large;
-    }
-
-    .nav-links a:hover {
-      color: #000;
-      cursor: not-allowed;
-    }
-
-    /* MAIN BODY */
-    main {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      color: #1a1a1a;
-    }
-
-    .contact-info {
-      font-size: 1.2rem;
-      color: #444;
-      line-height: 2;
-    }
-
-    .contact-info span {
-      display: block;
-    }
-
-    a {
-      color: #444;
-      text-decoration: none;
-    }
-
-    @media (max-width: 768px) {
-      .nav-logo img {
-        height: 90px;
-      }
-
-      .nav-logo span {
-        font-size: 1.3rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      .nav-links a {
-        margin-left: 10px;
-        font-size: 0.9rem;
-      }
-    }
-  </style>
 </head>
-<body>
 
-  <nav>
-    <div class="nav-logo">
-      <img src="assets/img/logo/logo2.png" alt="Rothshire Logo">
-    </div>
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </div>
-  </nav>
+<body class="index-page">
 
-  <main>
-    <h1>Website Under Development</h1>
-    <div class="contact-info">
-      <span>📍 845 Pacific Highway, Chatswood NSW 2067, Australia</span>
-      <span>📞 +61 1300 076 847</span>
-      <span>✉️ <a href="mailto:admin@rothshire.com.au">admin@rothshire.com.au</a></span>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+
+    <div class="container-fluid d-flex align-items-center">
+
+      <a href="/" class="logo d-flex align-items-center me-auto">
+        <!-- logo goes here -->
+        <img src="assets/img/roth_logo.png" alt="Rothshire logo">
+      </a>
+
+      <!--Navbar section-->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/" class="active">
+              <p>Home</p>
+            </a>
+          </li>
+          <li><a href="/#about">
+              <p>The Rothshire Difference</p>
+            </a>
+          </li>
+          <!-- Dropdown Section for Expertise-->
+          <li class="dropdown"><a href="#"><span>
+                <p>Services</p>
+              </span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="services/structural-engineering"><span>1. Structural</span></a></li>
+              <li class="dropdown"><a href="services/facade-engineering"><span>2. Facade</span></a></li>
+              <li class="dropdown"><a href="services/infrastructure-engineering"><span>3. Infrastructure</span></a></li>
+              <li class="dropdown"><a href="services/expert-witness/"><span>4. Expert Witness</span></a></li>
+              <li class="dropdown"><a href="services/forensic-investigation/"><span>5. Forensic Investigation</span></a></li>
+              <li class="dropdown"><a href="services/civil-stormwater/"><span>6. Civil & StormWater </span></a></li>
+              <li class="dropdown"><a href="services/flood-engineering/"><span>7. Flood Engineering</span></a></li>
+              <li class="dropdown"><a href="services/remedial-engineering/"><span>8. Remedial</span></a></li>
+              <li class="dropdown"><a href="services/planning-development/"><span>9. Planning</span></a></li>
+              <li class="dropdown"><a href="services/project-management/"><span>10. Project Management</span></a></li>
+              <li class="dropdown"><a href="services/architecture/"><span>11. Building Design</span></a></li>
+            </ul>
+          </li>
+          <!-- End Dropdown Section for Expertise-->
+          <li>
+            <a href="/#portfolio">
+              <p>Projects</p>
+            </a>
+          </li>
+          <li>
+            <a href="/contactus">
+              <p>Contact us</p>
+            </a>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <!--End of Navbar section-->
     </div>
+
+  </header>
+
+  <!--Home video section-->
+  <section id="home" class="video-section">
+    <main class="main">
+      <div class="video-background">
+        <video autoplay muted loop>
+          <source src="assets/videos/Media2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="contentforvideo">
+        <div class="animated-text-container">
+          <!-- <h1 class="animated-text">Rothshire</h1> -->
+          <p class="animated-text">Providing a light of knowledge to <br> last for generations</p>
+        </div>
+      </div>
+    </main>
+  </section>
+  <!-- </section> -->
+  <!--End Home video section-->
+
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>THE ROTHSHIRE DIFFERENCE</h2>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row gy-3">
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/img/contactus.jpg" alt="Rothshire Team" class="img-fluid"><br><br>
+          <h5 style="text-align: center;">Providing light of knowledge to last for generations</h5>
+        </div>
+
+        <div class="col-lg-6 d-flex flex-column justify-content" data-aos="fade-up">
+          <div class="about-content ps-0 ps-lg-3">
+            <h2>Rothshire</h2>
+            <p style="text-align: justify;">
+              Founded by people passionate about providing multi-disciplinary services,
+              our collaborative and open minded approach to design puts our clients at the heart of everything we
+              do.
+            </p>
+
+            <p style="text-align: justify;">
+              Rothshire have grown into a company that employs experts across a wide range of traditional and emerging
+              fields.
+              The result is a highly qualified skilled team who have the expertise for creating and developing viable
+              and sustinable
+              solutions who prides themselves on integrity in all our dealings with a constantly forward thinking,
+              innovative approach.
+              Rothshire ensure a leading service that redefines boundaries and sets new standards by producing
+              integrated and relevant
+              engineering solutions for a variety of clients in both the public ad private sector with our practical and
+              cost-effective engineering solutions.
+            </p>
+
+            <p style="text-align: justify;">
+              We aim to satisfy multiple and complex needs with our approach to problem solving through data information
+              knowledge insight which fosters a relentless approach to design.
+              The capabilities of our project teams are cultivated through a continual definition and focus on the
+              essence, at any location, and for the project duration.
+              Ultimately, our work ethic assumes accountability beyond discipline which far exceeds expectations which
+              is why we never walk away from a challenge.
+              This philosophy runs throughout the whole business and is a core value of our company.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /About Section -->
+
+  <!--Project or Portfolio section-->
+  <section id="portfolio" class="portfolio section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Projects & Services</h2>
+      <p>Some of the projects we have done so far.</p>
+    </div>
+    <div class="container">
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos="fade-up">
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <div class="portfolio-content h-100">
+              <a href="assets/img/services/facade/facade_sub.png" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/services/facade/facade_sub.png" class="img-fluid"
+                  alt="facade structure"></a>
+              <div class="portfolio-info">
+                <h4><a href="services/facade-engineering/" title="More Details">Facade</a></h4>
+                <p>Our facade engineers take pride in bringing client's visions to life in a way that ensures their
+                  buildings are durable as well as beautiful</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="portfolio-content h-100">
+              <a href="assets/img/services/Infrastructure/infra_main.png" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/services/Infrastructure/infra_main.png" class="img-fluid"
+                  alt="infrastructure building"></a>
+              <div class="portfolio-info">
+                <h4><a href="services/infrastructure-engineering/" title="More Details">Infrastructure</a></h4>
+                <p>Our team undertakes amintenance and design services to a range of critical infrastructure</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <div class="portfolio-content h-100">
+              <a href="assets/img/services/structural/structural_sub.png" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/services/structural/structural_sub.png" class="img-fluid"
+                  alt="structure building"></a>
+              <div class="portfolio-info">
+                <h4><a href="services/structural-engineering/" title="More Details">Structural Engineering</a></h4>
+                <p>Our structural engineers central focus is to provide a service second to none.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+            <div class="portfolio-content h-100">
+              <a href="assets/img/services/project_management/prjmgmt_main.png" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/services/project_management/prjmgmt_main.png" class="img-fluid"
+                  alt="Project Management"></a>
+              <div class="portfolio-info">
+                <h4><a href="services/project-management/" title="More Details" style="align-items: center;">Project
+                    Management</a></h4>
+                <p>Our project management team help to ensure you meet deadlines and stay within budget</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+            <div class="portfolio-content h-100">
+              <a href="assets/img/services/expert/expert_main.png" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/services/expert/expert_main.png" class="img-fluid"
+                  alt="Expert witness"></a>
+              <div class="portfolio-info">
+                <h4><a href="services/expert-witness/" title="More Details">Expert Witness</a></h4>
+                <p>Our team prides itself on integrity and reliablility and are well regarded by industry peers</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="portfolio-content h-100">
+              <a href="assets/img/services/forensic_investigation/investigation_main.png"
+                data-gallery="portfolio-gallery-app" class="glightbox"><img
+                  src="assets/img/services/forensic_investigation/investigation_main.png" class="img-fluid"
+                  alt="Forensic Investigation"></a>
+              <div class="portfolio-info">
+                <h4><a href="services/forensic-investigation/" title="More Details">Forensic Investigation</a></h4>
+                <p>Our engineers can assist you in the investigation of a wide range of structural and general building
+                  issues.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <div class="portfolio-content h-100">
+              <a href="assets/img/services/stormwater/stormwater_main.png" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/services/stormwater/stormwater_main.png" class="img-fluid"
+                  alt="Civil & stormwater"></a>
+              <div class="portfolio-info">
+                <h4><a href="services/civil-stormwater/" title="More Details">Civil & Stormwater</a></h4>
+                <p>Finding simple,effective solutions to the often complex challenges of our client's civil and
+                  stormwater engineering needs.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+            <div class="portfolio-content h-100">
+              <a href="assets/img/services/planning/planning_main.png" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/services/planning/planning_main.png" class="img-fluid"
+                  alt="Planning"></a>
+              <div class="portfolio-info">
+                <h4><a href="services/planning-development/" title="More Details">Planning & Development</a></h4>
+                <p>Rothshire's in house capability offers a full service to save you time and money as well as acheiving
+                  a high-quality result.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <div class="portfolio-content h-100">
+              <a href="assets/img/services/architecture/architecture_sub.png" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/services/architecture/architecture_sub.png" class="img-fluid"
+                  alt="Building Design"></a>
+              <div class="portfolio-info">
+                <h4><a href="services/architecture/" title="More Details">Building Design</a></h4>
+                <p>With a deep understanding of building concepts, materials, and colours, our architectural engineers
+                  craft spaces that are both stylish and structurally sound.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <div class="portfolio-content h-100">
+              <a href="assets/img/services/flood/flood_main.jpg" data-gallery="portfolio-gallery-app"
+                class="glightbox"><img src="assets/img/services/flood/flood_main.jpg" class="img-fluid" alt="Flood Engineering"></a>
+              <div class="portfolio-info">
+                <h4><a href="services/flood-engineering/" title="More Details">Flood Engineering</a></h4>
+                <p>Extreme weather patterns causing catastrophic flood events has triggered the need for sustainable
+                  flood engineering solutions..</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <a href="projects/home">
+          <p style="text-align: center; padding-top: 5rem;">See all Projects</p>
+        </a>
+      </div>
+  </section>
+  <!-- /Project or Portfolio Section -->
+
+
+  <!--Message from Director -->
+  <section id="message" class="message section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Message from Director</h2>
+    </div>
+    <div class="container">
+
+      <div class="row gy-3">
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/img/team/Naomi.png" alt="Image of Director" class="img-fluid">
+        </div>
+
+        <div class="col-lg-6 d-flex flex-column justify-content" data-aos="fade-up" data-aos-delay="200">
+          <div class="about-content ps-0 ps-lg-3">
+            <!-- <h3>Rothshire</h3> -->
+            <p style="text-align: justify;">Founded by people passionate about providing multi- disciplinary services to
+              clients, we have grown
+              into a company that employs experts across a wide range of traditional and emerging fields.
+
+              The result is a client-focused team that prides itself on integrity in all our dealings and a
+              constantly forward- thinking, innovative approach to all we do.
+
+              Our strength in problem-solving, providing results far exceeding expectations and never walking away
+              from a challenge fosters a relentless approach to design; this philosophy runs throughout
+              the whole business and is a core value of our company</p>
+            <br>
+            <p><b>Naomi</b></p>
+            <p>Chief director</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--Message from Director -->
+
+  <!-- Why Us Section -->
+  <section id="why-us" class="why-us section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>It's better when we work together</h2>
+      <p></p>
+
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4" data-aos="fade-up">
+          <div class="card-item">
+            <h4><a href="contactus" class="stretched-link">Become Our Client</a></h4>
+            <p>Partner with us today to change how tomorrow looks. You’re exactly what’s needed to help us make it
+              happen in your community.</p><br><br>
+            <button type="button" class="button-primary button-primary-orange-black">CONTACT US</button>
+          </div>
+        </div><!-- Card Item -->
+
+        <div class="col-lg-4" data-aos="fade-up">
+          <div class="card-item">
+            <h4><a href="jointheteam" class="stretched-link">Design Your Career</a></h4>
+            <p>Work with passionate people who are experts in their field. Our teams love what they do and are
+              driven by how their work makes an impact on the World.</p><br>
+            <button type="button" class="button-primary button-primary-orange-black">JOIN THE TEAM</button>
+          </div>
+        </div><!-- Card Item -->
+
+        <div class="col-lg-4" data-aos="fade-up">
+          <div class="card-item">
+            <h4><a href="explore" class="stretched-link">Explore More</a></h4>
+            <p>Explore more about rothshire and it's working environment. </p><br><br>
+            <button type="button" class="button-primary button-primary-orange-black">EXPLORE MORE</button>
+          </div>
+        </div><!-- Card Item -->
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- /Why Us Section -->
+
+  <!-- Recent Posts Section -->
+  <!-- <section id="recent-posts" class="recent-posts section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Recent Posts</h2>
+      <p>Recent Blog Posts<br></p>
+    </div>
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <article>
+
+            <div class="post-img">
+              <img src="assets/img/services/engineering.jpg" alt="" class="img-fluid">
+            </div>
+
+            <p class="post-category">Structural</p>
+
+            <h2 class="title">
+              <a href="blog/post1.html">Site Inspection in Civil Engineering: Process and Key Considerations</a>
+            </h2>
+
+            <div class="d-flex align-items-center">
+              <img src="assets/img/team/abash.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+              <div class="post-meta">
+                <p class="post-author">Abash</p>
+                <p class="post-date">
+                  <time datetime="2022-01-01">Jan 1, 2022</time>
+                </p>
+              </div>
+            </div>
+
+          </article>
+        </div>
+
+        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <article>
+
+            <div class="post-img">
+              <img src="assets/img/services/structural_fire.png" alt="" class="img-fluid">
+            </div>
+
+            <p class="post-category">Structural Fire</p>
+
+            <h2 class="title">
+              <a href="blog/post">Structural fire, it's consequences and the solution. </a>
+            </h2>
+
+            <div class="d-flex align-items-center">
+              <img src="assets/img/team/Dio.png" alt="" class="img-fluid post-author-img flex-shrink-0">
+              <div class="post-meta">
+                <p class="post-author">Dio</p>
+                <p class="post-date">
+                  <time datetime="2022-01-01">Jan 1, 2022</time>
+                </p>
+              </div>
+            </div>
+
+          </article>
+        </div>
+
+        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <article>
+
+            <div class="post-img">
+              <img src="assets/img/services/planning.jpg" alt="" class="img-fluid">
+            </div>
+
+            <p class="post-category">Engineering</p>
+
+            <h2 class="title">
+              <a href="blog/post">What is an Engineering? </a>
+            </h2>
+
+            <div class="d-flex align-items-center">
+              <img src="assets/img/team/arvaek.png" alt="" class="img-fluid post-author-img flex-shrink-0">
+              <div class="post-meta">
+                <p class="post-author">Arvaek</p>
+                <p class="post-date">
+                  <time datetime="2022-01-01">Jan 1, 2022</time>
+                </p>
+              </div>
+            </div>
+
+          </article>
+        </div>
+
+        <a href="blog/home">
+          <p style="text-align: center; padding-top: 100px;">See all Posts</p>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section> -->
+  <!-- /Recent Posts Section -->
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>Reach us on anytime you want</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-12">
+
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <div class="info-item" data-aos="fade" data-aos-delay="100">
+                <i class="bi bi-telephone"></i>
+                <h3>Call Us</h3>
+                <p><a href="tel:+61 1300 076 847">+61 1300 076 847</a></p>
+                <!-- <p><a href="tel:+967 770200779">+967 770200779</a></p> -->
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item" data-aos="fade" data-aos-delay="100">
+                <i class="bi bi-envelope"></i>
+                <h3>Email Us</h3>
+                <p><a href="mailto:admin@rothshire.com.au">admin@rothshire.com.au</a></p>
+                <!-- <p><a href="mailto:iraq@rothshire.com.au">iraq@rothshire.com.au</a></p> -->
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item" data-aos="fade" data-aos-delay="200">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Address</h3>
+                <p><a href="https://maps.app.goo.gl/TwtnCbmjNBc3EDCy5">845 Pacific Highway Chatswood NSW 2067,
+                    Australia</a></p>
+                <!-- <hr />
+                <p>Unit 103, Street 28, District 913, Al Jadriyah, Baghdad, Iraq</p> -->
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item" data-aos="fade" data-aos-delay="200">
+                <i class="bi bi-clock"></i>
+                <h3>Open Hours</h3>
+                <p></p>
+                <p>Australia : Monday - Friday (9:00 AM-5:00 PM)</p>
+
+                <!-- <hr />
+                <p>Iraq : Monday - Friday (9:00 AM-5:00 PM)</p> -->
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+          </div>
+
+        </div>
+
+        <!--Google map added in place of send mail form-->
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+          <iframe style="border:0; width: 100%; height: 270px;" title="Google Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207.23181877042822!2d151.1796166917243!3d-33.794009510319604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a8d1429193c3%3A0x991e6e39525dac06!2sRothshire!5e0!3m2!1sen!2sau!4v1724910681405!5m2!1sen!2sau"
+            frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div><!-- End Google Maps -->
+
+
+        <!-- End Contact Form -->
+      </div>
+    </div>
+  </section>
+  <!-- /Contact Section -->
+
   </main>
 
+  <!--Footer section-->
+  <footer id="footer" class="footer dark-background">
+
+    <!-- Newsletter section -->
+
+    <!-- <div class="footer-newsletter">
+            <div class="container">
+              <div class="row justify-content-center text-center">
+                <div class="col-lg-6">
+                  <h4 style="text-align: center;">Join Our Newsletter</h4>
+                  <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+                  <form action="forms/newsletter.php" method="post" class="php-email-form">
+                    <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+    <!-- /Newsletter section -->
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+        <div class="col-lg-3 col-md-3 footer-about">
+          <img src="../assets/img/logo/iso.jpg" style="width:80%;" alt="ISO logo">
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Departments</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="services/civil-stormwater">Civil & Stormwater</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services/facade-engineering">Facade Engineering</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services/structural-engineering">Structural Engineering</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services/infrastructure-engineering">Infrastructual Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Careers</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="experts">Meet the team</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="jointheteam">Join the team</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="whyus">Why choose us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="projects/home">Recent Projects</a></li>
+          </ul>
+        </div>
+
+        <!--Social Media-->
+        <div class="col-lg-3 col-md-3">
+          <h4>Social Medias</h4>
+          <p>Follow us to get daily updates on Social Platforms</p>
+          <div class="social-links d-flex">
+            <a href="https://x.com/rothshire845" title="Follow us on Twitter" target="_blank"><i
+                class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/rothshire845" title="Follow us on Facebook" target="_blank"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/rothshire845" title="Follow us on Instagram" target="_blank"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/rothshire-pty-ltd/" title="Follow us on Linkedin"
+              target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <!--End of social Media-->
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Rothshire</strong> <span>All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+  <!--/Footer section-->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
